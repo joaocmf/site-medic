@@ -1,11 +1,12 @@
-function menuShow(){
-    let menuMobile = document.querySelector('.mobile-menu');
-    if(menuMobile.classList.contains('open')){
-        menuMobile.classList.remove('open');
-        document.querySelector('icon').src = "img/menu_white_36dp.svg";
-    } else {
-        menuMobile.classList.add('open');
-        document.querySelector('icon').src = "img/close_white_36dp.svg";
-    }
+function menuShow() {
+    const mobileMenuIcon = document.querySelector('.mobile-menu-icon button');
+    mobileMenuIcon.classList.toggle('open');
 
+    let menuMobile = document.querySelector('.mobile-menu');
+    menuMobile.classList.toggle('open');
+
+    const navItems = document.querySelectorAll('.nav-item');
+    navItems.forEach(item => {
+        item.classList.toggle('open');
+    });
 }

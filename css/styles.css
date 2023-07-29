@@ -107,7 +107,16 @@ header {
     font-size: 1.1rem;
 }
 
-@media screen and (max-width: 730px) {
+#title h1{
+    font-weight: 900;
+    color: rgb(21, 21, 112);
+    font-size: 100px;
+    align-items: center;
+    text-align: center;
+    padding: 300px;
+}
+
+@media screen and (max-width: 930px) {
     .contact-button {
         display: none;
     }
@@ -120,12 +129,9 @@ header {
         display: none;
     }
 
-    .login-button {
-        display: none;
-    }
-
     .mobile-menu-icon {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 
     .icon {
@@ -140,6 +146,8 @@ header {
         background-color: transparent;
         border: none;
         cursor: pointer;
+        display: flex;
+        flex-direction: column;
     }
 
     .mobile-menu ul {
@@ -150,7 +158,8 @@ header {
     }
 
     .mobile-menu .nav-item {
-        display: block;
+        display: flex;
+        flex-direction: column;
         padding-top: 1.2rem;
     }
 
@@ -166,4 +175,11 @@ header {
     .open {
         display: block;
     }
+    .title h1{
+        padding: 1px;
+        width: 100%;
+    }
+
+  
+    
 }

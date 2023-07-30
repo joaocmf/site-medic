@@ -110,13 +110,13 @@ header {
 #title h1{
     font-weight: 900;
     color: rgb(21, 21, 112);
-    font-size: 100px;
+    font-size: 70px;
     align-items: center;
     text-align: center;
-    padding: 300px;
+    padding: 100px 50px 100px 70px;
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 730px) {
     .contact-button {
         display: none;
     }
@@ -175,11 +175,11 @@ header {
     .open {
         display: block;
     }
-    .title h1{
-        padding: 1px;
-        width: 100%;
-    }
 
-  
+    #title h1{
+        padding: 60px 10px 60px 10px;
+        width: 100%;
+        font-size: 30px;
+    }
     
 }
